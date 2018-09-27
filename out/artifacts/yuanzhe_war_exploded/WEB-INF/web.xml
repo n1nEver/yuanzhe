@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--图形验证码Servlet-->
+    <servlet>
+        <servlet-name>CheckCodeSer</servlet-name>
+        <servlet-class>servlet.CheckCodeSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckCodeSer</servlet-name>
+        <url-pattern>/checkcode</url-pattern>
+    </servlet-mapping>
+
+    <!--登陆验证Servlet-->
+    <servlet>
+        <servlet-name>LoginCheck</servlet-name>
+        <servlet-class>servlet.LoginCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCheck</servlet-name>
+        <url-pattern>/logincheck</url-pattern>
+    </servlet-mapping>
+
+    <!--登出Servlet-->
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>servlet.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!--搜索Servlet-->
+    <servlet>
+        <servlet-name>SearchSer</servlet-name>
+        <servlet-class>servlet.SearchSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchSer</servlet-name>
+        <url-pattern>/searchser</url-pattern>
+    </servlet-mapping>
+    <!--更新Servlet -->
+    <servlet>
+        <servlet-name>InfoUpdate</servlet-name>
+        <servlet-class>servlet.InfoUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InfoUpdate</servlet-name>
+        <url-pattern>/infoupdate</url-pattern>
+    </servlet-mapping>
+
+    <!--注册Servlet -->
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>servlet.RegisterSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>WanttingList</servlet-name>
+        <servlet-class>servlet.WanttingList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WanttingList</servlet-name>
+        <url-pattern>/wanttinglist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RecruitsList</servlet-name>
+        <servlet-class>servlet.RecruitsList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecruitsList</servlet-name>
+        <url-pattern>/recruitslist</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>OhersPage</servlet-name>
+        <servlet-class>servlet.OthersPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OhersPage</servlet-name>
+        <url-pattern>/otherspage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MsgAdd</servlet-name>
+        <servlet-class>servlet.MsgAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MsgAdd</servlet-name>
+        <url-pattern>/msgadd</url-pattern>
+    </servlet-mapping>
+</web-app>

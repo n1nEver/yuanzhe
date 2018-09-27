@@ -1,0 +1,448 @@
+
+* {
+    border: none;
+    margin: 0px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    box-sizing:border-box;
+}
+
+.invitation_show{
+    background-color: white;
+    width: 300px;
+    box-shadow:0px 3px 10px rgba(100,100,100,0.8) ;
+    margin: 40px 20px;
+    overflow: hidden;
+}
+
+.slideshow{
+    margin: 20px auto;
+    width: 1100px;
+}
+
+.index_msg_title{
+    margin: auto;
+}
+
+.slideshow-container {
+    width: 1100px;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    box-shadow:0px 3px 10px rgba(100,100,100,0.8) ;
+
+}
+
+/* 下一张 & 上一张 按钮 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(75, 188, 158, 0.62);
+}
+
+/* 标题文本 */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* 标记符号 */
+.dot {
+    z-index: 200;
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    box-shadow:0px 3px 10px rgba(100,100,100,0.5) ;
+
+}
+
+.active, .dot:hover {
+    background-color: #4bbc9e;
+}
+
+/* 淡出动画 */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+._body{
+    background: rgb(213, 219, 223) url(../img/newbg.png) center bottom no-repeat;
+    background-size: 1300px auto;
+    min-height: 1080px;
+    width: 100%;
+}
+
+.header{
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(25,25,25);
+    line-height: 40px;
+    transition: height 0.5s ease-out;
+    overflow: hidden;
+}
+.daohang{
+    z-index: 1;
+    height: 40px;
+    display: inline-block;
+    color: lightblue;
+    padding: 0;
+    right: 0px;
+    position: absolute;
+    margin-left: 300px;
+    overflow: hidden;
+}
+
+.daohang a{
+    transition: all 0.3s;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration-line: none;
+    color: lightcyan;
+    height: 40px;
+}
+
+.daohang a:not(.link_thisPage){
+    background-color:rgb(25,25,25);
+}
+.daohang a:hover{
+    background-color:slategray;
+}
+
+.content{
+    width: 90%;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.logop , .logop a{
+    font-family: Segoe , "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    color: #4bbc9e;
+    font-size: 20px;
+    margin-left: 20px;
+    text-shadow: 0px 0px 10px #4bbc9e;
+    display: inline-block;
+    font-weight: bold;
+}
+.link_thisPage{
+    background: #4bbc9e;
+}
+
+.link_login{
+    background: #e2818d;
+}
+
+.search-input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.search-input:focus{
+    box-shadow: 0px 0px 10px rgba(75, 188, 158, 0.9);
+}
+
+.search-submit{
+    height: 100%;
+    width: 60px;
+    color: white;
+    background: #4bbc9e;
+    position: absolute;
+    right: 0px;
+}
+
+.search-submit:hover{
+    cursor: pointer;
+}
+
+.search-form{
+    position: relative;
+    width: 450px ;
+    height: 40px;
+    margin: auto;
+    background: #0cccb5;
+}
+
+
+
+
+.user_info_div{
+    padding: 0px;
+    background: white;
+    font-size: 15px ;
+    font-weight: lighter ;
+    width: 900px;
+    margin: auto;
+    box-shadow: 0px 3px 10px rgba(100,100,100,0.8);
+}
+
+.user_info_show {
+    padding: 10px 70px 70px 70px;
+}
+
+.user_info_show_title {
+    margin-top: 50px;
+
+    color: #8a9cad;
+}
+
+.user_info_show_p , .user_edit_p ,.user_edit_p_radio {
+
+    margin: 10px auto;
+}
+
+.user_info_show_p span{
+    padding: 0 10px;
+}
+
+.user_info_show_p img{
+    top: 100px;
+    left: 950px;
+    width: 80px;
+    height: auto;
+    position: absolute;
+}
+
+.user_name{
+    font-size: 25px;
+}
+
+.user_info_show hr{
+    width: 100%;
+    height: 1px;
+    border-top:1px solid rgba(138, 156, 173, 0.53);
+    overflow: visible;
+}
+
+.link_user_info_edit_p{
+    margin-top: 50px;
+    color: #235e4e;
+    font-weight: normal;
+}
+
+
+.link_user_info_edit_p span {
+    position: relative;
+    left: 600px;
+}
+
+.link_user_info_edit_p span:hover{
+    color: #58eac4;
+    cursor: pointer;
+}
+
+#user_edit_div{
+    display: none;
+}
+
+.msg{
+    color: red;
+}
+
+
+.user_edit_p  input , .user_edit_p select ,.user_edit_p textarea  {
+    height: 35px;
+    width: 500px;
+    border: solid rgba(100,100,100,0.2) 1px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.user_edit_p textarea{
+    width: 500px;
+    height: 100px;
+    font-size: 15px;
+}
+
+.user_edit_p_radio input{
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: solid rgba(100,100,100,0.2) 1px;
+}
+
+.user_edit_p input:focus , .user_edit_p textarea:focus{
+    border: solid rgba(108, 188, 254, 0.5) 1px;
+    box-shadow: 0px 0px 5px rgba(108, 188, 254, 0.5);
+}
+
+.user_edit_p_buttun input{
+    height: 35px;
+    width: 100px;
+    background: #58eac4;
+    color: white;
+}
+
+.user_edit_p_buttun{
+     margin: 20px;
+ }
+
+.user_edit_p_buttun *{
+    margin: 20px;
+    position: relative;
+    left: 300px;
+}
+
+.user_edit_p_buttun input:hover{
+    box-shadow: 0px 0px 10px rgba(88, 234, 196, 0.9);
+    cursor: pointer;
+}
+
+.user_reg_title{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #58eac4;
+    font-weight: normal;
+}
+
+
+.msg_info_show{
+    float: left;
+    font-size: 18px;
+    margin: 10px ;
+    background: white;
+    min-width: 300px;
+    padding:30px;
+    box-shadow: 0px 3px 10px rgba(100,100,100,0.8);
+}
+
+.msg_info_show .user_info_show_title , .msg_info_show p{
+    margin: 10px;
+    padding-left:20;
+}
+
+.msg_info_show span{
+    margin: 10px;
+}
+
+.msg_info_show input{
+    height: 35px;
+    width: 100px;
+    background: #58eac4;
+    color: white;
+
+}
+
+.index_msg_title{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.invitation_show hr{
+    height: 2px;
+    border-top:1px solid rgba(138, 156, 173, 0.53);
+    overflow: visible;
+}
+
+.invitation_show .user_reg_title{
+    margin: 20px;
+    text-align: center;
+    color: rgba(44, 112, 93, 0.62);
+}
+
+.index_hr{
+    width: 100%;
+    height: 1px;
+    border-top:1px solid rgba(138, 156, 173, 0.53);
+    overflow: visible;
+}
+
+.invitation_show .user_info_show_p{
+    padding-left: 20px;
+}
+
+.invitation_show .user_info_show_p input{
+    color: white;
+    background-color: #58eac4;
+}
+
+.index_show{
+    margin: auto;
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+    height: 600px;
+    font-size: 15px;
+    color: #4c858c;
+}
+
+.index_show .user_info_show_title{
+    margin: 20px;
+}
+.index_show_div{
+    margin: 20px;
+    width: 200px;
+    float: left;
+    box-shadow: 0px 3px 10px rgba(100,100,100,0.8) ;
+}
+
+.recruits_edit{
+    background: white;
+    display: block;
+    clear: both;
+}
+.buttun{
+    margin: 10px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: #58eac4;
+    color: white;
+}
